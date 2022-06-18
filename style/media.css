@@ -1,0 +1,56 @@
+@media (prefers-color-scheme: dark) {
+    .logo::before {
+        content: url(../image/svg/logo-dark.svg);
+    }
+
+    :root {
+        --second-color: #fff;
+        --body: #151437;
+        --dots:#ebebeb;
+    }
+
+    .header__link:hover {
+        color: #fff;
+    }
+}
+
+@media(max-width:1440px) {
+    .header__nav::after {
+        right: 0px;
+    }
+
+    .header__nav::before {
+        top: 62px;
+        left: 30px;
+    }
+}
+
+@media(max-width:991px) {
+    .header__bottom::before,
+    .header__bottom::after,
+    .header__nav::before,
+    .header__nav::after {
+        display: none;
+    }
+}
+@media(max-width:375px){
+    .header__title{
+        font-size: 33px;
+        line-height: 40px;
+    }
+    .header__btn{
+        width: 100%;
+    }
+    .header__bottom{
+        padding-top: 0;
+    }
+}
+@media(max-width:320px){
+    .header__content-subtitle{
+        font-size: 20px;
+    }
+    .header__title{
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
