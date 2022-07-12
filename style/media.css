@@ -30,7 +30,20 @@
         top: 62px;
         left: 30px;
     }
+    .footer__list{
+
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .footer{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+
 }
+
 @media(max-width:1100px) {
     .about__work {
         transform: translate(0);
@@ -46,7 +59,13 @@
         display: none;
     }
 }
-
+@media(max-width:770px){
+    .footer__list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
 
 
 @media(max-width:425px) {
